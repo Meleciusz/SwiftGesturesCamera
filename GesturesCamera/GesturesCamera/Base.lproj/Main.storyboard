@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QNa-sn-ExO">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="QrA-tm-nNN">
+            <objects>
+                <viewController id="qWc-29-col" customClass="View2Controller" customModule="lab3_s5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azy-oW-7MB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-xP-o3B">
+                                <rect key="frame" x="152" y="235" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHw-3d-HcM">
+                                <rect key="frame" x="131" y="363" width="128" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oDT-Zx-YLs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="FJt-Am-ehR"/>
+                    <connections>
+                        <outlet property="time" destination="LHw-3d-HcM" id="wgN-ZT-EKs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuq-uj-wOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604.61538461538464" y="197.63033175355449"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="gcN-Bn-508">
+            <objects>
+                <viewController id="Tbw-lv-AbB" customClass="ViewController" customModule="lab3_s5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IUx-TH-zlh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V2P-t0-2BS">
+                                <rect key="frame" x="53" y="240" width="285" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KAt-BL-tq7" appends="YES" id="wVB-hi-AOJ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S4r-iX-Sev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="8z4-Qz-GSt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0n-t9-pYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="KAt-BL-tq7">
+                    <connections>
+                        <action selector="handlePan:" destination="Tbw-lv-AbB" id="8qf-hP-RHV"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="604.61538461538464" y="-453.55450236966823"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="A5T-mz-MDA">
+            <objects>
+                <viewController id="Yhk-31-XLV" customClass="View3Controller" customModule="lab3_s5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uwy-gY-fdk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qE9-X4-oac">
+                                <rect key="frame" x="75" y="199" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qdR-kA-X6J" appends="YES" id="yd1-c1-Wa5"/>
+                                    <outletCollection property="gestureRecognizers" destination="Zxi-XU-8mV" appends="YES" id="AuF-FJ-Rwy"/>
+                                </connections>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53M-QE-gY5">
+                                <rect key="frame" x="68" y="555" width="279" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="ciO-cV-mhq">
+                                        <connections>
+                                            <action selector="openCameraButton:" destination="Yhk-31-XLV" id="PIv-ET-E76"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Sbn-X3-1lB"/>
+                                    <barButtonItem image="photo" catalog="system" id="RDv-4p-SL4">
+                                        <connections>
+                                            <action selector="openPhotoLibraryButton:" destination="Yhk-31-XLV" id="nnd-Tc-R7e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Eng-dR-vHQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Z9h-bV-x7e"/>
+                    <connections>
+                        <outlet property="imagePicked" destination="qE9-X4-oac" id="bnU-ef-fm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3p-Vy-UpU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="qdR-kA-X6J">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="Yhk-31-XLV" id="xHZ-Yt-LlP"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Zxi-XU-8mV">
+                    <connections>
+                        <action selector="handleRotateWithRecognizer:" destination="Yhk-31-XLV" id="Xyi-b4-wU9"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="604.61538461538464" y="-1127.4881516587677"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jhz-Xv-d1o">
+            <objects>
+                <tabBarController id="QNa-sn-ExO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nkL-YZ-9oI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tbw-lv-AbB" kind="relationship" relationship="viewControllers" id="6He-uF-igl"/>
+                        <segue destination="qWc-29-col" kind="relationship" relationship="viewControllers" id="sVq-OE-18R"/>
+                        <segue destination="Yhk-31-XLV" kind="relationship" relationship="viewControllers" id="H7g-Zs-J5t"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bk-JI-F2z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="-106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image.jpg" width="425" height="363"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
